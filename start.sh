@@ -1,9 +1,9 @@
 #!/bin/bash
 export PASSWORD=${PASSWORD:-'feefeb96-bfcf-4a9b-aac0-6aac771c1b98'}  # 随机生成password，无需更改
-export SERVER_PORT="${SERVER_PORT:-${PORT:-2212}}"      # hy2 端口，改为开放的udp端口
-export NEZHA_SERVER=${NEZHA_SERVER:-'nz.seav.eu.org'}       # 哪吒客户端域名
-export NEZHA_PORT=${NEZHA_PORT:-'443'}             # 哪吒客户端端口为{443,8443,2096,2087,2083,2053}其中之一时开启tls
-export NEZHA_KEY=${NEZHA_KEY:-'6eLJr8urdaN5vexkoF'}                 # 哪吒客户端密钥
+export SERVER_PORT="${SERVER_PORT:-${PORT:-443}}"      # hy2 端口，改为开放的udp端口
+export NEZHA_SERVER=${NEZHA_SERVER:-''}       # 哪吒客户端域名
+export NEZHA_PORT=${NEZHA_PORT:-''}             # 哪吒客户端端口为{443,8443,2096,2087,2083,2053}其中之一时开启tls
+export NEZHA_KEY=${NEZHA_KEY:-''}                 # 哪吒客户端密钥
 
 # Download Dependency Files
 DOWNLOAD_DIR="." && mkdir -p "$DOWNLOAD_DIR"
